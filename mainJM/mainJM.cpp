@@ -2,10 +2,16 @@
 //
 
 #include <iostream>
+#include <string>
+using namespace std;
 
-int main()
-{
-    std::cout << "Hello World!\n";
+#include "jantung.h"
+#include "manusia.h"
+
+int main() {
+	manusia* varManusia = new manusia("jono");
+	delete varManusia;
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
