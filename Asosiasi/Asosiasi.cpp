@@ -6,7 +6,7 @@ class dokter;
 class pasien {
 public:
     string nama;
-    vector <dokter>* daftar_dokter;
+    vector <dokter*> daftar_dokter;
     pasien(string pNama) :nama(pNama) {
         cout << "Pasien \"" << nama << "\" tidak ada\n";
     }
@@ -32,6 +32,14 @@ public:
     void tambahPasien(pasien*);
     void cetakPasien();
 };
+
+void pasien::tambahDokter(dokter* pDokter){
+    daftar_dokter.push_back(pDokter);
+}
+void pasien::cetakDokter(){
+    cout << "Daftar Dokter yang menangani pasien \"" << this->nama << "\":\n";
+    for
+}
 
 int main()
 {
